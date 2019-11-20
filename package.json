@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
     "deploy": "gh-pages -d docs/.vuepress/dist"
   },
   "devDependencies": {
