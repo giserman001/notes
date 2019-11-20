@@ -1,10 +1,33 @@
+const fs = require('fs')
+// 获取该文件夹下的所有文件名
+const getFileNames = (parentFileName) => {
+  const results = []
+  const files = fs.readdirSync(`./docs${parentFileName}`)
+  files.forEach((val) => {
+    if ('README.md'.includes(val)) {
+      // results.push('')
+    } else {
+      results.push(val)
+    }
+  })
+  return results
+}
+
 module.exports = {
   title: '去冲浪鸭',
   description: '耶耶耶耶耶✌️',
   base: "/write-something/",
   themeConfig: {
     displayAllHeaders: false, // 默认值：false
+
     lastUpdated: true,
+
+    repo: 'fyz1994/write-something',
+    editLinks: true,
+    docsDir: 'docs',
+
+    smoothScroll: true,//页面滚动
+
     nav: [
       {
         text: '知识库',
@@ -38,71 +61,52 @@ module.exports = {
       '/knowledge/javascript/': [
         {
           title: 'javascript',
-          children: [
-            '',
-            'type',
-          ]
+          children: getFileNames('/knowledge/javascript/')
         }
       ],
       '/knowledge/graphql/': [
         {
           title: 'Graphql',
-          children: [
-            '【译】保护您的GraphQL API免受恶意查询的影响'
-          ]
+          children: getFileNames('/knowledge/graphql/')
         }
       ],
       '/knowledge/react/': [
         {
           title: 'React 学习记录',
-          children: [
-            '',
-          ]
+          children: getFileNames('/knowledge/react/')
         }
       ],
       '/knowledge/http/': [
         {
           title: '网络请求',
-          children: [
-            ''
-          ]
+          children: getFileNames('/knowledge/http/')
         }
       ],
       '/tool/tools/': [
         {
           title: '工具',
-          children: [
-            '',
-          ]
+          children: getFileNames('/tool/tools/')
         }
       ],
       '/essay/diary/': [
         {
           title: '生活记录',
-          children: [
-            '20190118',
-          ]
+          children: getFileNames('/essay/diary/')
         }
       ],
       '/essay/docs/': [
         {
           title: '好文摘抄',
-          children: [
-            '互联网行业的裁员潮'
-          ]
+          children: getFileNames('/essay/docs/')
         }
       ],
       '/essay/notes/': [
         {
           title: '读书笔记',
-          children: [
-            '软技能职业篇',
-            '小狗钱钱',
-            '吃掉那只青蛙',
-          ]
+          children: getFileNames('/essay/notes/')
         }
       ],
     },
-    sidebarDepth: 2
+    sidebarDepth: 1
   }
 }
