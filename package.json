@@ -1,0 +1,12 @@
+{
+  "name": "fyz-notes",
+  "description": "fyz 的杂货铺",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yizhen.fan",
+  "license": "ISC",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
