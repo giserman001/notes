@@ -1,6 +1,6 @@
 ---
 sidebar: auto
-tag: 工具
+tags: 工具
 ---
 
 # GitHub Actions + Vuepress，真香！
