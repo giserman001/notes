@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # GitHub Actions + Vuepress，真香！
 
 > 使用 GitHub Actions 自动构建/部署 Vuepress 静态站点
