@@ -17,6 +17,9 @@ module.exports = {
   title: '去冲浪鸭',
   description: '耶耶耶耶耶✌️',
   base: "/write-something/",
+  head: [
+    ['link', { rel: 'icon', href: `/touxiang.png` }]
+  ],
   themeConfig: {
     displayAllHeaders: false, // 默认值：false
 
