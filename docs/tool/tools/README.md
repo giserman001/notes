@@ -1,4 +1,6 @@
-# 使用 GitHub Actions 自动构建/部署 Vuepress 静态站点
+# GitHub Actions + Vuepress，真香！
+
+> 使用 GitHub Actions 自动构建/部署 Vuepress 静态站点
 
 大家有注意到 GitHub 悄悄上线了一个 Actions 功能吗？GitHub 官方号称 Actions 可以让你的日常开发流程很多事情可以自动化起来，其实相当于是 GitHub 官方接入了 CI/CD，我们开发者只要写一下 workflow 脚本就可以了，不用费心思去想要用哪个第三方的 CI/CD 服务。
 

@@ -4,22 +4,33 @@ module.exports = {
   base: "/write-something/",
   themeConfig: {
     displayAllHeaders: false, // 默认值：false
+    lastUpdated: true,
     nav: [
-      { text: '主页', link: '/' },
       {
         text: '知识库',
         items: [
           { text: 'JavaScript', link: '/knowledge/javascript/' },
           { text: 'Graphql', link: '/knowledge/graphql/' },
-          { text: '常用链接', link: '/knowledge/links/' },
+          { text: 'React', link: '/knowledge/react/' },
+          { text: '网络请求', link: '/knowledge/http/' },
         ]
       },
       {
-        text: '杂文',
+        text: '工具库', link: '/tool/tools/',
+      },
+      {
+        text: '杂记',
         items: [
           { text: '生活记录', link: '/essay/diary/' },
           { text: '好文摘抄', link: '/essay/docs/' },
           { text: '读书笔记', link: '/essay/notes/' },
+        ]
+      },
+      {
+        text: '我的其他主页',
+        items: [
+          { text: '掘金', link: 'https://juejin.im/user/5b446be0f265da0f793a56e4/posts' },
+          { text: 'NPM', link: 'https://www.npmjs.com/settings/yizhen.fan/packages' },
         ]
       },
     ],
@@ -41,15 +52,23 @@ module.exports = {
           ]
         }
       ],
-      '/knowledge/links/': [
+      '/knowledge/react/': [
         {
-          title: '常用链接',
+          title: 'React 学习记录',
           children: [
             '',
           ]
         }
       ],
-      '/knowledge/tools/': [
+      '/knowledge/http/': [
+        {
+          title: '网络请求',
+          children: [
+            ''
+          ]
+        }
+      ],
+      '/tool/tools/': [
         {
           title: '工具',
           children: [
@@ -84,6 +103,6 @@ module.exports = {
         }
       ],
     },
-    sidebarDepth: 1
+    sidebarDepth: 2
   }
 }
