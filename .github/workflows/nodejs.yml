@@ -1,0 +1,18 @@
+name: 自动发布我的博客笔记
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: 构建
+      run: ./deploy.sh
