@@ -6,7 +6,12 @@
   "author": "yizhen.fan",
   "license": "ISC",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d docs/.vuepress/dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "vuepress": "^1.2.0"
   }
 }
