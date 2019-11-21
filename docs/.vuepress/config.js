@@ -42,13 +42,12 @@ module.exports = {
         ]
       },
       {
-        text: '工具库', link: '/tool/tools/',
+        text: '工具', link: '/tool/tools/',
       },
       {
-        text: '杂记',
+        text: '阅读',
         items: [
-          { text: '生活记录', link: '/essay/diary/' },
-          { text: '好文摘抄', link: '/essay/docs/' },
+          { text: '优质文章记录', link: '/essay/docs/' },
           { text: '读书笔记', link: '/essay/notes/' },
         ]
       },
@@ -57,6 +56,7 @@ module.exports = {
         items: [
           { text: '掘金', link: 'https://juejin.im/user/5b446be0f265da0f793a56e4/posts' },
           { text: 'NPM', link: 'https://www.npmjs.com/settings/yizhen.fan/packages' },
+          { text: 'GitHub', link: 'https://github.com/fyz1994' }
         ]
       },
     ],
@@ -91,15 +91,9 @@ module.exports = {
           children: getFileNames('/tool/tools/')
         }
       ],
-      '/essay/diary/': [
-        {
-          title: '生活记录',
-          children: getFileNames('/essay/diary/')
-        }
-      ],
       '/essay/docs/': [
         {
-          title: '好文摘抄',
+          title: '优质文章记录',
           children: getFileNames('/essay/docs/')
         }
       ],
