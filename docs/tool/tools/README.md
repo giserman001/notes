@@ -101,32 +101,9 @@ actions 其实就是由一些脚本组成，所以它们是可以复用的，Git
 这里我直接使用了 peaceiris 的 [`actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages)，这个 `action` 可以帮你把打包好的静态文件部署到 `GitHub Pages` 上去。
 
 最终我的 workflow 脚本如下：
-```
-name: blog deploy
+![image](https://user-images.githubusercontent.com/16002911/69312573-52984900-0c6a-11ea-9d4c-92d477410d6e.png)
+[脚本源文件](https://github.com/fyz1994/write-something/blob/master/.github/workflows/deploy.yml)
 
-on:
-  push:
-    branches:
-    - master
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-18.04
-    steps:
-    - uses: actions/checkout@master
-
-    - run: npm ci
-
-    - run: npm run build
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: docs/.vuepress/dist
-
-```
 更详细的语法可以去看 [GitHub Actions 的官方文档](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows)
 
 #### 注意事项
