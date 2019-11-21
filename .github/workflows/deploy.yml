@@ -1,4 +1,4 @@
-name: github pages
+name: fyz-notes
 
 on:
   push:
@@ -11,18 +11,18 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: Setup Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
+    # - name: Setup Node
+    #   uses: actions/setup-node@v1
+    #   with:
+    #     node-version: '10.x'
 
-    - name: Cache dependencies
-      uses: actions/cache@v1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+    # - name: Cache dependencies
+    #   uses: actions/cache@v1
+    #   with:
+    #     path: ~/.npm
+    #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-node-
 
     - run: npm ci
 
