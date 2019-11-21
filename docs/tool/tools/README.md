@@ -101,7 +101,7 @@ actions 其实就是由一些脚本组成，所以它们是可以复用的，Git
 这里我直接使用了 peaceiris 的 [`actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages)，这个 `action` 可以帮你把打包好的静态文件部署到 `GitHub Pages` 上去。
 
 最终我的 workflow 脚本如下：
-```sh
+```
 name: blog deploy
 
 on:
@@ -165,4 +165,3 @@ ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""
 
 ## 给 Vuepress 博客做 SEO 优化
 待补充...
-
