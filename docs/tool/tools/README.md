@@ -116,7 +116,7 @@ actions 其实就是由一些脚本组成，所以它们是可以复用的，Git
 
 ### 设置 workflow 的环境变量
 
-上面的脚本里面的 `ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}` 是怎么回事呢？
+上面的脚本里面第21行的 ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }} 是怎么回事呢？
 
 因为我们需要 GitHub actions 把构建成果发到 GitHub 仓库，因此需要 GitHub 密钥，相当于是给 GitHub actions 授权。
 
