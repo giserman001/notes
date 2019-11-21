@@ -22,6 +22,7 @@ features:
 
 - [markdown 有哪些 emoji 表情](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
 - [circleci](https://circleci.com/vcs-authorize/)
+- [免费的静态资源托管服务](https://juejin.im/post/5b57dc9f6fb9a04fb136e91e)
 - [自己搭建科学上网的梯子](https://github.com/xiaoming2028/FreeNet/wiki)
 
 ## 资源

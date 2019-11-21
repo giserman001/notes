@@ -61,7 +61,7 @@ module.exports = {
         ]
       },
       {
-        text: '我的其他主页',
+        text: 'Me',
         items: [
           { text: '掘金', link: 'https://juejin.im/user/5b446be0f265da0f793a56e4/posts' },
           { text: 'NPM', link: 'https://www.npmjs.com/settings/yizhen.fan/packages' },
@@ -113,6 +113,6 @@ module.exports = {
         }
       ],
     },
-    sidebarDepth: 1
+    sidebarDepth: 2
   }
 }
