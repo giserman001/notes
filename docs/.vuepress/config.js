@@ -26,7 +26,8 @@ module.exports = {
       {
         'ga': 'UA-144045995-2'
       }
-    ]
+    ],
+    '@vuepress/back-to-top'
   ],
   themeConfig: {
     displayAllHeaders: false, // 默认值：false
