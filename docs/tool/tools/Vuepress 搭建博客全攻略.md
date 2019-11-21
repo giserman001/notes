@@ -79,6 +79,8 @@ echo '# Hello VuePress!' > docs/README.md
 也可以使用其他第三方静态页面托管服务（如 Netlify、Coding Pages、Gitlab Pages 等），[这篇文章](https://juejin.im/post/5b57dc9f6fb9a04fb136e91e)里面介绍了很多免费的静态页面托管服务。
 :::
 
+到这一步，你的博客已经可以顺利地运行、构建和部署了，直接执行 `npm run deploy` 就可以将您的博客部署到 GitHub Pages 上去，如果您还想让你的博客书写和使用的体验更好，可以接着往下看。
+
 ## GitHub Actions 自动构建/部署
 
 大家有注意到 GitHub 悄悄上线了一个 Actions 功能吗？还不了解的同学可以看[这篇文章](https://zhuanlan.zhihu.com/p/77751445)，写的非常全面。
@@ -129,7 +131,7 @@ ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""
 2. 同样在博客项目的仓库的 Settings 栏下，找到 `Secrets`这一项，把你的私钥加进去
 ![image](https://user-images.githubusercontent.com/16002911/69307473-b4a27f80-0c65-11ea-908c-c8da810709fb.png)
 
-### 注意事项：
+### 注意事项
 
 1. **把 `Vuepress` 作为你的开发依赖加入到项目的 `package.json` 文件里面进行管理**。（否则在 GitHub 的 docker 容器里打包的时候会找不到 `Vuepress` 这个命令）
 2. **使用 npm 而不是 yarn 来管理依赖包**。（因为 npm 是 node 环境自带的包管理工具，无需额外安装，另外， peaceiris 的 [`actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages) 也是使用 npm 作为包管理工具的）
