@@ -101,7 +101,7 @@ actions 其实就是由一些脚本组成，所以它们是可以复用的，Git
 
 最终我的 workflow 脚本如下：
 ![image](https://user-images.githubusercontent.com/16002911/69312573-52984900-0c6a-11ea-9d4c-92d477410d6e.png)
-[脚本源文件](https://github.com/fyz1994/write-something/blob/master/.github/workflows/deploy.yml)
+[脚本源文件](https://github.com/fyz1994/notes/blob/master/.github/workflows/deploy.yml)
 
 更详细的语法可以去看 [GitHub Actions 的官方文档](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows)
 

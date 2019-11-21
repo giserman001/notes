@@ -16,7 +16,7 @@ const getFileNames = (parentFileName) => {
 module.exports = {
   title: '去冲浪鸭',
   description: '耶耶耶耶耶✌️',
-  base: "/write-something/",
+  base: "/notes/",
   head: [
     ['link', { rel: 'icon', href: `/touxiang.png` }]
   ],
@@ -25,7 +25,7 @@ module.exports = {
 
     lastUpdated: true,
 
-    repo: 'fyz1994/write-something',
+    repo: 'fyz1994/notes',
     editLinks: true,
     docsDir: 'docs',
 

@@ -19,7 +19,7 @@ export default {
       const commentConfig = {
         clientID: "456079439c50848a6193",
         clientSecret: "e2c42b4c023fa219beea2f67fd397b569fadfe08",
-        repo: "write-something",
+        repo: "notes",
         owner: "fyz1994",
         // 这里接受一个数组，可以添加多个管理员，可以是你自己
         admin: ["fyz1994"],
