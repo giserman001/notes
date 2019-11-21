@@ -20,6 +20,14 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: `/touxiang.png` }]
   ],
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-144045995-2'
+      }
+    ]
+  ],
   themeConfig: {
     displayAllHeaders: false, // 默认值：false
 
